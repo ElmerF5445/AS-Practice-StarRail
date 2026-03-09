@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/NavTo_Home">
+
+    <fragment
+        android:id="@+id/NavTo_Home"
+        android:name="com.example.starrail.panel_home"
+        android:label="fragment_panel_home"
+        tools:layout="@layout/fragment_panel_home" >
+        <action
+            android:id="@+id/action_panel_home_to_panel_trips"
+            app:destination="@id/NavTo_Trips" />
+    </fragment>
+    <fragment
+        android:id="@+id/NavTo_Trips"
+        android:name="com.example.starrail.panel_trips"
+        android:label="fragment_panel_trips"
+        tools:layout="@layout/fragment_panel_trips" />
+    <fragment
+        android:id="@+id/NavTo_ID"
+        android:name="com.example.starrail.panel_id"
+        android:label="fragment_panel_id"
+        tools:layout="@layout/fragment_panel_id" />
+</navigation>
